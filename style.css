@@ -1,0 +1,196 @@
+html {
+	font-size: 62.5%;
+	background-color: var(--clr-neutral-100);
+}
+
+h1,
+h2 {
+	font-family: var(--ff-header);
+	font-weight: 700;
+}
+
+p,
+a {
+	font-family: var(--ff-body);
+	font-size: 1.6rem;
+	line-height: 2.8rem;
+}
+
+.fs-65 {
+	font-size: 6.5rem;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+/* ================ buttons */
+
+.button {
+	padding: 15px 0px;
+	border-radius: 1.6rem;
+}
+
+/* ================ utility classes */
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flow-row {
+	flex-direction: row;
+}
+
+.align-center {
+	align-self: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.text-light {
+	color: var(--clr-neutral-100);
+}
+
+.text-dark {
+	color: var(--clr-neutral-800);
+}
+
+.bg-warm {
+	background-color: var(--clr-warm-800);
+}
+
+.bg-dark {
+	background-color: var(--clr-neutral-800);
+}
+
+.bg-light {
+	background-color: var(--clr-neutral-100);
+}
+
+.bg-cool {
+	background-color: var(--clr-cool-200);
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+/* ================= ss-hero */
+
+.hero__h1 {
+	font-size: 4rem;
+	line-height: 4.8rem;
+	margin-bottom: 2rem;
+}
+
+/* ================= ss-1 */
+
+.ss1__wrapper {
+	border-radius: 12px;
+}
+
+.ss1 .card {
+	padding: 4rem;
+	border-radius: 1.2rem;
+}
+
+.ss1__h2 {
+	font-size: 3.2rem;
+	margin-bottom: 2rem;
+}
+
+.flow-16 > * + * {
+	margin-block-start: 1.6rem;
+}
+
+/* ================= footer */
+
+.footer__wrapper {
+	flex-direction: column;
+	gap: 3.2rem;
+	padding: 6.4rem 0rem;
+}
+
+.social-icon__wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	padding: 3.2rem 0rem;
+}
+
+.footer__p {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+}
+
+/* ================ wrappers */
+
+.nav {
+	padding: 4rem 2.4rem;
+}
+
+.hero {
+	padding: 0rem 2.4rem;
+}
+
+.footer__wrapper {
+	padding: 6.4rem 2.4rem;
+}
+
+/* ================ media queries */
+
+/* ================ mq-tablet */
+
+@media (min-width: 768px) {
+	.hero__h1 {
+		font-size: 6.4rem;
+		line-height: 6.4rem;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+
+	p,
+	a {
+		font-size: 1.8rem;
+	}
+
+	.ss1 .card {
+		max-width: 400px;
+	}
+
+	body {
+		max-width: 1110px;
+		margin-inline: auto;
+	}
+}
+
+/* ================ mq-desktop */
+
+@media (min-width: 1440px) {
+	.hero__h1 {
+		font-size: 8.8rem;
+		line-height: 8.8rem;
+	}
+
+	p {
+		line-height: 3.4rem;
+		font-size: 2rem;
+	}
+
+	.ss1 .card {
+		max-width: 446px;
+		padding: 5.8rem 5.8rem 5.8rem 4.8rem;
+	}
+}

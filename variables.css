@@ -1,0 +1,28 @@
+:root {
+	/* colors */
+	--clr-cool-200: #66e2dc;
+	--clr-warm-800: #fa7453;
+	--clr-warm-300: #ffb964;
+	--clr-neutral-100: #fcfaf9;
+	--clr-neutral-800: #191826;
+	--ff-header: "IBM Plex Sans Bold", sans-serif;
+	--ff-body: "IBM Plex Sans Reg", sans-serif;
+	/* font-sizes */
+	--fs-36: 3.6rem;
+	--fs-32: 3.2rem;
+	--fs-24: 2.4rem;
+	--fs-20: 2rem;
+	--fs-18: 1.8rem;
+	--fs-16: 1.6rem;
+	--fs-14: 1.4rem;
+	/* font-weights */
+	--fw-400: 400;
+	--fw-700: 700;
+	/* size/spacing values */
+	--size-8: 0.5rem;
+	--size-12: 0.75rem;
+	--size-16: 1rem;
+	--size-20: 1.25rem;
+	--size-32: 2rem;
+	--size-36: 2.25rem;
+}
