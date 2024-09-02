@@ -24,11 +24,29 @@ a {
 	font-weight: 700;
 }
 
-/* ================ buttons */
+/* ================ buttons and links */
 
 .button {
 	padding: 15px 0px;
 	border-radius: 1.6rem;
+}
+
+.btn__primary {
+	background-color: var(--clr-neutral-800);
+}
+.btn__primary:hover {
+	background-color: var(--clr-cool-200);
+}
+
+.btn__secondary {
+	background-color: var(--clr-neutral-100);
+}
+.btn__secondary:hover {
+	background-color: var(--clr-warm-300);
+}
+
+path:hover {
+	fill: var(--clr-warm-800);
 }
 
 /* ================ utility classes */
@@ -118,26 +136,16 @@ a {
 	margin-bottom: 2rem;
 }
 
-/* .hero__bg {
-	top: 0;
-	transform: translateX(40%);
-	z-index: 0;
-} */
+.hero__bg-blur {
+	top: -20em;
+	right: -15em;
+	margin-left: auto;
+	z-index: -5;
+}
 
-/* .hero__bg-wrapper picture {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	overflow: hidden;
-} */
-
-/* .hero__bg-wrapper img {
-	width: 100%;
-	height: 100%;
-} */
+.hero__bg-pattern {
+	display: none;
+}
 
 /* ================= ss-1 */
 
@@ -209,6 +217,8 @@ a {
 	flex-direction: row;
 	gap: 2rem;
 	padding: 3.2rem 0rem;
+	margin-left: auto;
+	align-items: end;
 }
 
 .footer__p {
@@ -247,7 +257,7 @@ a {
 	}
 
 	.hero__text-wrapper {
-		max-width: 560px;
+		max-width: 100%;
 	}
 
 	.ss1__wrapper {
@@ -285,12 +295,27 @@ a {
 	.footer__flexbox-1 {
 		display: flex;
 		justify-content: space-between;
-		align-items: end;
 	}
 
 	.footer__flexbox-2 {
 		display: flex;
 		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.hero__bg-blur {
+		right: 5em;
+		top: -10em;
+		transform: scale(1.2);
+		max-width: 100%;
+	}
+
+	.hero__bg-pattern {
+		display: inline;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		margin-right: -5em;
 	}
 }
 
@@ -308,7 +333,7 @@ a {
 	}
 
 	.hero__text-wrapper {
-		max-width: 1000px;
+		/* max-width: 1000px; */
 	}
 
 	.hero__p {
@@ -330,10 +355,22 @@ a {
 
 	.footer__wrapper {
 		margin-top: 8rem;
+		gap: 0rem;
 	}
 
 	.footer__flexbox-2 {
 		flex-direction: row;
 		gap: 14rem;
+	}
+
+	.hero__bg-blur {
+		right: 30em;
+		top: -20em;
+		/* transform: scale(1.2); */
+		max-width: 100%;
+	}
+
+	.hero__bg-pattern {
+		max-width: 20%;
 	}
 }
